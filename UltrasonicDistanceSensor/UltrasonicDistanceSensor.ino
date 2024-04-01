@@ -1,11 +1,9 @@
 /***********************************************************
-File name: 20_ultrasonicDistanceSensor.ino
+File name: UltrasonicDistanceSensor.ino
 Description: When you move the ultrasonic distance sensor,
              you will find LCD1602 display distance.
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/02 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
 ***********************************************************/
 
 #include <LiquidCrystal.h>

@@ -1,3 +1,9 @@
+/***********************************************************
+File name: Bar graph display without potentiometer.ino.c
+Description: Without using Potentiometer Bar graph display changing.
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
+***********************************************************/
 int pin1 = 1;
 int pin2 = 2;
 int pin3 = 3;

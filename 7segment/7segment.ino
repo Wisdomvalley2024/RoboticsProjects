@@ -1,3 +1,9 @@
+/***********************************************************
+File name: 7segmentDisplay.ino
+Description: When power supply to the Arduino board, the seven segement display is start showing numeric digits from 0-9.
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
+*************************************************************/
 #include <LiquidCrystal.h>
 
 int trig = 7;

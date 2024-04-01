@@ -1,6 +1,15 @@
-//counter starting from 500 need to intialize the int data line 24;
-int btn1pin=0;             //Set the digital 0 to button interface 
-int btn2pin=13;            //Set the digital 13 to button interface 
+/***********************************************************
+File name: ASimpleCounter.ino
+Description:when you are pressing two buttons, four-digit
+            segment display values will be increased and decreased by 2.
+            In line.no 57 and 63 we are writing the code for both increment and decrement data by 2 and 
+			In line.no 33 initialized the data i.e equal to zero.   
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024
+***********************************************************/
+
+int btn1pin = 0;             // Set the digital 0 to button interface
+int btn2pin = 13;            // Set the digital 13 to button interface
 int a = 1;
 int b = 2;
 int c = 3;
@@ -16,16 +25,16 @@ int d1 = 12;
 
 long n = 0;
 int x = 100;
-int del = 55;  
+int del = 55;
 int i = 0;
 int j = 1;
 int k = 2;
 int l = 3;
-int data=500; // need to change the number 
-void setup()
-{
-  pinMode(btn1pin,INPUT_PULLUP); //Set digital 2 port mode, the INPUT for the input
-  pinMode(btn2pin,INPUT_PULLUP); //Set digital 2 port mode, the INPUT for the input
+int data = 0; // Initialize data to start from 0
+
+void setup() {
+  pinMode(btn1pin, INPUT_PULLUP); // Set digital 2 port mode, the INPUT for the input
+  pinMode(btn2pin, INPUT_PULLUP); // Set digital 2 port mode, the INPUT for the input
   pinMode(d1, OUTPUT);
   pinMode(d2, OUTPUT);
   pinMode(d3, OUTPUT);
@@ -39,41 +48,29 @@ void setup()
   pinMode(g, OUTPUT);
   pinMode(p, OUTPUT);
 }
- 
-void loop()
-{
-  int d1,d2,d3,d4;
-  if(digitalRead(btn1pin)==LOW)          //Detection button interface to low
-  {   
-      delay(10);                         //Delay 10ms for the elimination of key leading-edge jitter
-      if(digitalRead(btn1pin)==LOW)      //Confirm button is pressed
-      {     
-        if(data>9999)                    
-        { 
-          data=9999;
-        }else{
-          data = data + 1;
-        }
+
+void loop() {
+  int d1, d2, d3, d4;
+  if (digitalRead(btn1pin) == LOW) { // Detection button interface to low
+    delay(10); // Delay 10ms for the elimination of key leading-edge jitter
+    if (digitalRead(btn1pin) == LOW) { // Confirm button is pressed
+      data += 2; // Increment data by 2
+    }
+  }
+  if (digitalRead(btn2pin) == LOW) { // Detection button interface to low
+    delay(10); // Delay 10ms for the elimination of key leading-edge jitter
+    if (digitalRead(btn2pin) == LOW) { // Confirm button is pressed
+      data -= 2; // Decrement data by 2
+      if (data < 0) { // Ensure data doesn't go below 0
+        data = 0;
       }
-   }
-   if(digitalRead(btn2pin)==LOW)          //Detection button interface to low
-  {   
-      delay(10);                        //Delay 10ms for the elimination of key leading-edge jitter
-      if(digitalRead(btn2pin)==LOW)      //Confirm button is pressed
-      {     
-        if(data<=0)
-        { 
-          data=0;
-        }else{
-          data = data - 1;
-        }
-      }
-   }
-   d1 = data/1000%10;    //The one thousand digital data
-   d2 = data/100%10;     //The one hundred digital data
-   d3 = data/10%10;      //Ten-digit data
-   d4 = data%10;         //data of single digit
-  for(int m=0;m<80;m++){
+    }
+  }
+  d1 = data / 1000 % 10;    // The one thousand digital data
+  d2 = data / 100 % 10;     // The one hundred digital data
+  d3 = data / 10 % 10;      // Ten-digit data
+  d4 = data % 10;           // data of single digit
+   for(int m=0;m<80;m++){
   clearLEDs();           //Turn off all LED lights
   pickDigit(1);          //Selection of a digital display
   pickNumber(d1);        //Display digital d1
@@ -283,5 +280,4 @@ void nine()  //Define those figures 9 cathode pin switch
   digitalWrite(f, HIGH);
   digitalWrite(g, HIGH);
 }
-
 

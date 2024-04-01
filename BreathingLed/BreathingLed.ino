@@ -1,11 +1,9 @@
 /***********************************************************
-File name: 08_breathingLed.ino
+File name: BreathingLed.ino
 Description: PWM control the LED gradually from dark to 
              brighter, then from brighter to dark
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/02 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024
 ***********************************************************/
 int ledpin=11; //definition digital 11 pins as pin to control the LED
 

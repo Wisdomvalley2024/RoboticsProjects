@@ -1,13 +1,11 @@
 /***********************************************************
-File name: 09_rgbLed.ino
+File name: RGBLed.ino
 Description:Control the RGB LED emitting red, green, blue, yellow,
             white and purple light, then the RGB LED will be off,
             each state continues 1s, after repeating the above 
-            procedure.   
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/02 
+            procedure.  
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
 *************************************************************/
 int redPin = 11;   // R petal on RGB LED module connected to digital pin 11 
 int greenPin = 10; // G petal on RGB LED module connected to digital pin 10 

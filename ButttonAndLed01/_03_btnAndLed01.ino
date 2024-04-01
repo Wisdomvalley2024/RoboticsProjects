@@ -2,10 +2,8 @@
 File name: 03_btnAndLed01.ino
 Description: When you press the button, you can see the state
               of the LED will be toggled. (ON->OFF，OFF->ON).
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/02 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
 ***********************************************************/
 
 int ledpin=11;            //definition digital 11 pins as pin to control the LED

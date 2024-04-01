@@ -1,3 +1,9 @@
+/***********************************************************
+File name: Bar graph display with potentiometer.ino.c
+Description: With the help of Potentiometer Bar graph display changing(line.no 18, 36 and 37).
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
+***********************************************************/
 int pin1 = 1;
 int pin2 = 2;
 int pin3 = 3;

@@ -1,10 +1,8 @@
 /***********************************************************
-File name: 02_activeBuzzer.ino
+File name: ActiveBuzzer.ino
 Description: Arduino uno Continuous beeps control buzzer.
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/02 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024
 ***********************************************************/
 int buzzerPin=8; //definition digital 8 pins as pin to control the buzzer
 void setup()

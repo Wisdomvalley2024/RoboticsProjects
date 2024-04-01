@@ -1,3 +1,9 @@
+/***********************************************************
+File name: Alternate ON and OFF of LED flow.c
+Description: Flowing lights alternately ON and OFF in both directions. 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
+***********************************************************/
 void setup() {
   for (unsigned char ledPin = 1; ledPin <= 8; ledPin++)
     pinMode(ledPin, OUTPUT); // Set pins 1 ~ 8 to output mode

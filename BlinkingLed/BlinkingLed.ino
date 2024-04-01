@@ -1,8 +1,8 @@
 /***********************************************************
-File name: blinkingLed.ino
+File name: BlinkingLed.ino
 Description: let LED blinks.
 E-mail: wisdom.valley.ka@gmail.com
-Date: 2024/03/27 
+Date: 01/04/2024 
 ***********************************************************/
 int ledPin=8; //definition digital 8 pins as pin to control the LED
 void setup()

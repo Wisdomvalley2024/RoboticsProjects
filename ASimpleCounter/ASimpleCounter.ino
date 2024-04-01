@@ -1,11 +1,9 @@
 /***********************************************************
-File name: 13_aSimpleCounter.ino
+File name: ASimpleCounter.ino
 Description:when you are pressing two buttons, four-digit
             segment display values will change.
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/05 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024
 ***********************************************************/
 int btn1pin=0;             //Set the digital 0 to button interface 
 int btn2pin=13;            //Set the digital 13 to button interface 

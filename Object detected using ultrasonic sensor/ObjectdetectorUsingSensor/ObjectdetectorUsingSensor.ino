@@ -1,6 +1,10 @@
-
-//Ultasonic Sensor
-
+/***********************************************************
+File name: Object detection using Ultrasonic sensor.ino
+Description:   When the Object is detecting by the sensor within the range of 5 inches(see in line.no 18) the red light is ON and getting beep on buzzer.
+               if the object is there above the range as mentioned in line.no 19 Green light is ON. Sensor isn't detecting any object above mentioned range. 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
+***********************************************************/
 //Pins connected to the ultrasonic sensor
 #define trigPin  2
 #define echoPin 3

@@ -1,15 +1,13 @@
 /***********************************************************
-File name: 15_servo.ino
+File name: Servo.ino
 Description:   The servo motor are rotated to 15 degrees, 30 
                degrees, 45 degrees, 60 degrees, 75 degrees, 
                90 degrees, 75 degrees, 60 degrees, 45 degrees,
                30 degrees, 15 degrees, 0 degrees, and then from 
                0 degrees to 180 degrees and from 180 degrees to
                0 degrees.
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/05 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
 ***********************************************************/
 
 #include <Servo.h>

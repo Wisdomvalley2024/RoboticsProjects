@@ -2,10 +2,8 @@
 File name: 11_LCD1602.ino
 Description: LCD1602 display a string "Hello Geeks!" scrolling，
              then display “EPICTAC” and “www.epictac.com” static.
-Website: www.epictac.com
-E-mail: info.epictac@gmail.com
-Author: Tom
-Date: 2015/05/02 
+E-mail: wisdom.valley.ka@gmail.com
+Date: 01/04/2024 
 ***********************************************************/
 
 #include <LiquidCrystal.h>
